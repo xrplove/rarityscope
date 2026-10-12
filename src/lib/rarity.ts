@@ -103,11 +103,13 @@ export function upstreamArtUrls(serial: number, w = 512): string[] {
 }
 
 function fillArtTemplate(template: string, serial: number, w: number): string {
-  return template
+  const filled = template
     .replaceAll('{cid}', config.art.cid)
     .replaceAll('{ext}', config.art.ext)
     .replaceAll('{serial}', String(serial))
     .replaceAll('{w}', String(w))
+  // Relative art paths get the deploy base path (e.g. /rarityscope on GitHub Pages).
+  return filled.startsWith('/') ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${filled}` : filled
 }
 
 /** Valid serials are 1..total. */

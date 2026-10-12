@@ -1,4 +1,10 @@
-# RarityScope
+# RarityScope — Tree of Life edition
+
+> This is the Tree of Life / Lantern House fork of [ShaneOnChain/rarityscope](https://github.com/ShaneOnChain/rarityscope),
+> made by Shane ([XRPLClaw](https://xrplclaw.com)) and shared under the MIT license (kept in `LICENSE`).
+> Thank you, Shane! Family home: <https://treeoflife-apostles.github.io/>. Live site: <https://xrplove.github.io/rarityscope/>.
+> It still shows the bundled **scopelings** demo collection; the family's own collection will replace it once it has traits.
+> GitHub Pages builds a static export (`.github/workflows/pages.yml`, `STATIC_EXPORT=1 BASE_PATH=/rarityscope`).
 
 A self-hostable, mobile-first rarity browser for **any** NFT collection. Search a piece, see its
 rank and full trait breakdown, browse the whole collection, and compare two side by side. Rank the
