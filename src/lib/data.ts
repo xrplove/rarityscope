@@ -36,7 +36,7 @@ const bucketCache = new Map<number, Promise<Record<string, Detail>>>()
 /** The full rank data (all methods), cached after the first call. */
 export function loadSummary(): Promise<Summary> {
   if (!summaryPromise) {
-    summaryPromise = fetch('/data/summary.json')
+    summaryPromise = fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/data/summary.json`)
       .then((r) => {
         if (!r.ok) throw new Error(`summary.json ${r.status}`)
         return r.json()
@@ -55,7 +55,7 @@ export async function loadDetail(serial: number): Promise<Detail | null> {
   const b = Math.floor((serial - 1) / BUCKET)
   let p = bucketCache.get(b)
   if (!p) {
-    p = fetch(`/data/detail/${b}.json`)
+    p = fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/data/detail/${b}.json`)
       .then((r) => {
         if (!r.ok) throw new Error(`detail/${b}.json ${r.status}`)
         return r.json()

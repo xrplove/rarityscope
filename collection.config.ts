@@ -159,8 +159,8 @@ export const config: CollectionConfig = {
   },
 
   marketplace: {
-    name: 'GitHub',
-    collectionUrl: 'https://github.com/ShaneOnChain/rarityscope',
+    name: 'Tree of Life',
+    collectionUrl: 'https://treeoflife-apostles.github.io/',
   },
 
   // Only used when liveStats / mintedMarkers are on (XRPL collections).
@@ -192,9 +192,9 @@ export const config: CollectionConfig = {
   },
 
   branding: {
-    siteTitle: 'scopelings rarity',
-    tagline: 'RarityScope demo — search any piece, see its rank and trait breakdown, and compare two side by side.',
-    keywords: ['NFT', 'rarity', 'OpenRarity', 'RarityScore', 'rarity browser', 'open source'],
+    siteTitle: 'Tree of Life Rarity',
+    tagline: 'A Tree of Life / Lantern House rarity browser (demo collection for now) — search any piece, see its rank and trait breakdown, and compare two side by side. Home: treeoflife-apostles.github.io',
+    keywords: ['Tree of Life', '589', 'NFT', 'rarity', 'OpenRarity', 'RarityScore', 'rarity browser', 'open source'],
     credit: { label: 'XRPLClaw', url: 'https://xrplclaw.com' },
   },
 

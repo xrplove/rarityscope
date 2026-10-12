@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   // Emits <meta name="generator"> — the RarityScope signature.
   generator: `RarityScope · ${config.branding.credit.label}`,
   icons: {
-    icon: [{ url: '/favicon.ico', sizes: '32x32' }],
-    apple: '/apple-touch-icon.png',
+    icon: [{ url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon.ico`, sizes: '32x32' }],
+    apple: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/apple-touch-icon.png`,
   },
   openGraph: {
     title: config.branding.siteTitle,
